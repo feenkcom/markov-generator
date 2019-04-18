@@ -72,7 +72,7 @@ MgMarkov >> gtDictionaryFor: aView [
 	self dictionary ifEmpty: [ ^ aView empty ].
 	^ (self dictionary gtItemsFor: aView)
 			title: 'Dictionary';
-			actionButtonIcon: #playinspect 
+			actionButtonIcon: #playinspect asThemedIcon
 				action: [ :aButton | aButton phlow spawnObject: self generateText ]
 ]
 
