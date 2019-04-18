@@ -1,15 +1,15 @@
 "
-I generate random sentences based on a given Markov dictionary created by ${class:SoMarkovDictionaryGenerator}$. 
+I generate random sentences based on a given Markov dictionary created by ${class:MgMarkovDictionaryGenerator}$. 
 
-You can initialize the Markov dictionary by ${method:SoMarkov>>#dictionary:}$ and ask for a random sentence by calling ${method:SoMarkov>>#generateText}$.
+You can initialize the Markov dictionary by ${method:MgMarkov>>#dictionary:}$ and ask for a random sentence by calling ${method:MgMarkov>>#generateText}$.
 
 !! Example
 
-Using the following sentences as input dataset: ${example:SoMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewHeight=180}$
+Using the following sentences as input dataset: ${example:MgMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewHeight=180}$
 
-I can generate the following sentence: ${example:SoMarkovExamples>>#generatedSentence|codeExpanded=false|previewExpanded=true|previewHeight=60|previewShow=gtStringFor:}$
+I can generate the following sentence: ${example:MgMarkovExamples>>#generatedSentence|codeExpanded=false|previewExpanded=true|previewHeight=60|previewShow=gtStringFor:}$
 
-To play more with the generated sentences, you can press the play and inspect button in the following example result: ${example:SoMarkovExamples>>#markovWithDictionary|codeExpanded=false|previewExpanded=true}$
+To play more with the generated sentences, you can press the play and inspect button in the following example result: ${example:MgMarkovExamples>>#markovWithDictionary|codeExpanded=false|previewExpanded=true}$
 
 
 

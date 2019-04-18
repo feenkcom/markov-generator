@@ -1,9 +1,9 @@
 "
-I keep collection of ${class:SoMarkovLinkedWords}$. I am used as a value in case of ${class:SoMarkovBeginKey}$ key.
+I keep collection of ${class:MgMarkovLinkedWords}$. I am used as a value in case of ${class:MgMarkovBeginKey}$ key.
 
-Look for ${method:SoMarkovBeginKey>>#printOn:|expanded=true}$ key in the example below and explore its value.
+Look for ${method:MgMarkovBeginKey>>#printOn:|expanded=true}$ key in the example below and explore its value.
 
-Example: ${example:SoMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=true}$
+Example: ${example:MgMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=true}$
 "
 Class {
 	#name : #MgMarkovLinkedWordsCollection,

@@ -1,13 +1,13 @@
 "
-I am responsible for creating Markov dictionary that is later used to generate random sentences by ${class:SoMarkov}$.
+I am responsible for creating Markov dictionary that is later used to generate random sentences by ${class:MgMarkov}$.
 
-I generate a ${class:Dictionary}$ with ${class:SoMarkovLinkedWords}$and ${class:SoMarkovBeginKey}$ as keys and ${class:SoMarkovLinkedWords}$ and ${class:SoMarkovWordsCollection}$ as values. 
+I generate a ${class:Dictionary}$ with ${class:MgMarkovLinkedWords}$and ${class:MgMarkovBeginKey}$ as keys and ${class:MgMarkovLinkedWords}$ and ${class:MgMarkovWordsCollection}$ as values. 
 
-You can use ${method:SoMarkovDictionaryGenerator>>#readFile:}$, ${method:SoMarkovDictionaryGenerator>>#readString:}$, and ${method:SoMarkovDictionaryGenerator>>#readStream:}$ to generate the Markov dictionary that is then available at ${method:SoMarkovDictionaryGenerator>>#dictionary}$.
+You can use ${method:MgMarkovDictionaryGenerator>>#readFile:}$, ${method:MgMarkovDictionaryGenerator>>#readString:}$, and ${method:MgMarkovDictionaryGenerator>>#readStream:}$ to generate the Markov dictionary that is then available at ${method:MgMarkovDictionaryGenerator>>#dictionary}$.
 
-For example the following dataset: ${example:SoMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewHeight=180}$
+For example the following dataset: ${example:MgMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewHeight=180}$
 
-Is converted to the following dictionary: ${example:SoMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=t}$
+Is converted to the following dictionary: ${example:MgMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=t}$
 
 
 

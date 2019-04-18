@@ -1,6 +1,6 @@
 "
 I examplify Markov algorithm generating random sentences.
-For more documentation, I recommend you to start with ${class:SoMarkov}$.
+For more documentation, I recommend you to start with ${class:MgMarkov}$.
 "
 Class {
 	#name : #MgMarkovExamples,
@@ -28,7 +28,6 @@ MgMarkovExamples >> emptyLinkedWords [
 
 { #category : #sentences }
 MgMarkovExamples >> firstSentence [
-	<gtExample>
 	^ 'We developed humane assessment to help your team to make better technical decisions and steer agile architecture.'
 ]
 
@@ -123,7 +122,6 @@ MgMarkovExamples >> newWordFromExisting [
 
 { #category : #sentences }
 MgMarkovExamples >> secondSentence [
-	<gtExample>
 	^ 'We capture ideas as executable specifications and tell exciting stories with your systems.'
 ]
 
@@ -143,19 +141,16 @@ MgMarkovExamples >> sentenceTokenizer [
 
 { #category : #sentences }
 MgMarkovExamples >> sentenceWithInitials [
-	<gtExample>
 	^ 'In 1958 Margulies tracked down the first magazine publication of H.G. Wells'' The Time Machine from 1894–1895, and reprinted a short excerpt from it that had been omitted by every subsequent printing.'
 ]
 
 { #category : #sentences }
 MgMarkovExamples >> sentenceWithInitialsAtTheBeginning [
-	<gtExample>
 	^ 'H.G. Wells reprinted a short excerpt from it that had been omitted by every subsequent printing.'
 ]
 
 { #category : #sentences }
 MgMarkovExamples >> thirdSentence [
-	<gtExample>
 	^ 'We invented moldable development and we are building the Glamorous Toolkit.'
 ]
 
