@@ -2,7 +2,7 @@
 I am a collection of words that can appear in a sentence one followed by the other. 
 The number of words is defined by ${class:MgMarkovDictionaryGenerator}$ during the Markov dictionary generations, by ${method:MgMarkovDictionaryGenerator>>#order}$ value. 
 
-I am used as a key in the Markov dictionary and alMg as the dictionary value in case of ${class:MgMarkovBeginKey}$ key as those values are special.
+I am used as a key in the Markov dictionary and also as the dictionary value in case of ${class:MgMarkovBeginKey}$ key as those values are special.
 
 Example: ${example:MgMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=true}$
 "
