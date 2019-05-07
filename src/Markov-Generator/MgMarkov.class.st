@@ -1,17 +1,23 @@
 "
-I generate random sentences based on a given Markov dictionary created by ${class:MgMarkovDictionaryGenerator}$. 
+I represent a Markov-chain generator.
 
-You can initialize the Markov dictionary by ${method:MgMarkov>>#dictionary:}$ and ask for a random sentence by calling ${method:MgMarkov>>#generateText}$.
+I generate a randomized text based on the Markov-chain algorithm.
 
-!! Example
+Collaborators: 
+- MgMarkovDictionaryGenerator: I use its result to be able to generate the randomized text
 
-Using the following sentences as input dataset: ${example:MgMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewHeight=180}$
+Public API and Key Messages
 
-I can generate the following sentence: ${example:MgMarkovExamples>>#generatedSentence|codeExpanded=false|previewExpanded=true|previewHeight=60|previewShow=gtStringFor:}$
+- dictionary:
+- maxWordsInSentence:
+- generateText
 
-To play more with the generated sentences, you can press the play and inspect button in the following example result: ${example:MgMarkovExamples>>#markovWithDictionary|codeExpanded=false|previewExpanded=true}$
+Internal Representation and Key Implementation Points.
 
+Instance Variables
 
+- dictionary: Dictionary, holds Markov dictionary
+- maxWordsInSentence: Integer, number of words in one generated sentence
 
 "
 Class {

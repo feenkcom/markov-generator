@@ -1,15 +1,27 @@
 "
-I am responsible for creating Markov dictionary that is later used to generate random sentences by ${class:MgMarkov}$.
+I represent a Markov dictionary generator.
 
-I generate a ${class:Dictionary}$ with ${class:MgMarkovLinkedWords}$and ${class:MgMarkovBeginKey}$ as keys and ${class:MgMarkovLinkedWords}$ and ${class:MgMarkovWordsCollection}$ as values. 
+I do generate a dictionary that is used to generate randomized text.
 
-You can use ${method:MgMarkovDictionaryGenerator>>#readFile:}$, ${method:MgMarkovDictionaryGenerator>>#readString:}$, and ${method:MgMarkovDictionaryGenerator>>#readStream:}$ to generate the Markov dictionary that is then available at ${method:MgMarkovDictionaryGenerator>>#dictionary}$.
+Collaborators: 
+- MgMarkovBeginKey: used as a dictinary key 
+- MgMarkovLinkedWords: used as a dictinary key or value
+- MgMarkovWordsCollection: used as a dictinary value
+- MgMarkovSentenceTokenizer: used to split a text to sentences
 
-For example the following dataset: ${example:MgMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewHeight=180}$
+Public API and Key Messages
 
-Is converted to the following dictionary: ${example:MgMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=t}$
+- readFile:
+- readString:
+- readStream: 
+- dictionary
 
+Internal Representation and Key Implementation Points.
 
+Instance Variables
+- dictionary: Dictionary, a generated Markov dictionary
+- order: Integer, number of consecutive words
+- sentenceTokenizer, MgMarkovSentenceTokenizer
 
 "
 Class {

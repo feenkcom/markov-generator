@@ -1,14 +1,25 @@
 "
-I tokenize a text into sentences. 
-The ${method:MgMarkovSentenceTokenizer>>#isSentenceSplitter:|expanded=true}$ method defines how a sentences ends, e.g., dot character.
+I represent a sentence tokenizer.
 
-You can use ${method:MgMarkovSentenceTokenizer>>#tokenizeStream:}$ or ${method:MgMarkovSentenceTokenizer>>#tokenizeString:}$ to split a text into sentences. The result can be obtained by ${method:MgMarkovSentenceTokenizer>>#sentences}$.
+I split a text into a sentences. 
 
-!! Example
+Collaborators: 
+- MgMarkovDictionaryGenerator: uses me to tokenize a text
 
-The following sentence: ${example:MgMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewShow=gtStringFor:|previewHeight=120}$
+Public API and Key Messages
 
-Is tokenized into three sentences: ${example:MgMarkovExamples>>#tokenizeThreeSentences|codeExpanded=false|previewExpanded=true|previewShow=gtItemsFor:|previewHeight=120}$
+- order
+- tokenizeStream:
+- tokenizeString:
+- sentences
+
+Internal Representation and Key Implementation Points.
+
+Instance Variables
+
+- order: Integer, a minimum number of words in one sentence
+- sentences, a generated senteces from a text
+
 "
 Class {
 	#name : #MgMarkovSentenceTokenizer,

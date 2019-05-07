@@ -1,11 +1,20 @@
 "
-I am a collection of words that can appear in a sentence after a particular words sequence stored in Markov dictionary as keys.
+I represent a collection of words that can appear in a sentence after a particular words sequence stored in Markov dictionary as keys.
 
-The number of words depends how rich is a input dataset provided by ${class:MgMarkovDataSets}$. I am filled by ${class:MgMarkovDictionaryGenerator}$ during the Markov dictionary generation.
+Collaborators:
+- MgMarkovDictionaryGenerator: generates my instances
 
-In the following example I appear as a value in all but ${class:MgMarkovBeginKey}$ key.
+Public API and Key Messages
 
-Example: ${example:MgMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=true}$
+- addWord:
+- atRandom
+
+Internal Representation and Key Implementation Points.
+
+Instance Variables
+
+- collection: OrderedCollection, collection words
+
 "
 Class {
 	#name : #MgMarkovWordsCollection,

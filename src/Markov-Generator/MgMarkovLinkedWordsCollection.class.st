@@ -1,9 +1,23 @@
 "
-I keep collection of ${class:MgMarkovLinkedWords}$. I am used as a value in case of ${class:MgMarkovBeginKey}$ key.
+I am a collection.
 
-Look for ${method:MgMarkovBeginKey>>#printOn:|expanded=true}$ key in the example below and explore its value.
+I hold MgMarkovLinkedWords instances
 
-Example: ${example:MgMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=true}$
+Collaborators: 
+- MgMarkovLinkedWords: I hold instances of it
+- MgMarkovDictionaryGenerator: generates my instances
+
+Public API and Key Messages
+
+- addLinkedWords:
+- atRandom
+
+Internal Representation and Key Implementation Points.
+
+Instance Variables
+
+- collection: OrderedCollection, collection of MgMarkovLinkedWords instances
+
 "
 Class {
 	#name : #MgMarkovLinkedWordsCollection,

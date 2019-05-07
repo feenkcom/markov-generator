@@ -1,8 +1,12 @@
 "
-I identify a word sequences that can be used at the beginning of sentences.
-I am used by ${class:MgMarkovDictionaryGenerator}$ at ${method:MgMarkovDictionaryGenerator>>#beginningKey}$.
+I represent a consecutive words that can be used at the beginning of sentences.
 
-In the following example, you can find me as a dictionary key with the same text as written in the ${method:MgMarkovBeginKey>>#printOn:|expanded=true}$ ${example:MgMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=true}$
+I am a key value in a Markov dictionary.
+
+Collaborators:
+- MgMarkovDictionaryGenerator: it uses me to generate the Markov dictionary
+- MgMarkov: it uses me to generate randomized text
+
 "
 Class {
 	#name : #MgMarkovBeginKey,
