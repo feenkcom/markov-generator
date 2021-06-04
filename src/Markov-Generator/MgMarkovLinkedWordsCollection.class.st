@@ -1,9 +1,10 @@
 "
-I keep collection of ${class:MgMarkovLinkedWords}$. I am used as a value in case of ${class:MgMarkovBeginKey}$ key.
+I keep collection of {{gtClass:MgMarkovLinkedWords}}. I am used as a value in case of {{gtClass:MgMarkovBeginKey}} key.
 
-Look for ${method:MgMarkovBeginKey>>#printOn:|expanded=true}$ key in the example below and explore its value.
+Look for {{gtMethod:MgMarkovBeginKey>>#printOn:|expanded=true}} key in the example below and explore its value.
 
-Example: ${example:MgMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=true}$
+Example: {{gtExample:MgMarkovExamples>>#generatedDictionary|codeExpanded=false|previewExpanded=true}}
+
 "
 Class {
 	#name : #MgMarkovLinkedWordsCollection,

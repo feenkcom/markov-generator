@@ -1,14 +1,15 @@
 "
 I tokenize a text into sentences. 
-The ${method:MgMarkovSentenceTokenizer>>#isSentenceSplitter:|expanded=true}$ method defines how a sentences ends, e.g., dot character.
+The {{gtMethod:MgMarkovSentenceTokenizer>>#isSentenceSplitter:|expanded=true}} method defines how a sentences ends, e.g., dot character.
 
-You can use ${method:MgMarkovSentenceTokenizer>>#tokenizeStream:}$ or ${method:MgMarkovSentenceTokenizer>>#tokenizeString:}$ to split a text into sentences. The result can be obtained by ${method:MgMarkovSentenceTokenizer>>#sentences}$.
+You can use {{gtMethod:MgMarkovSentenceTokenizer>>#tokenizeStream:}} or {{gtMethod:MgMarkovSentenceTokenizer>>#tokenizeString:}} to split a text into sentences. The result can be obtained by {{gtMethod:MgMarkovSentenceTokenizer>>#sentences}}.
 
-!! Example
+## Example
 
-The following sentence: ${example:MgMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewShow=gtStringFor:|previewHeight=120}$
+The following sentence: {{gtExample:MgMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewShow=gtStringFor:|previewHeight=120}}
 
-Is tokenized into three sentences: ${example:MgMarkovExamples>>#tokenizeThreeSentences|codeExpanded=false|previewExpanded=true|previewShow=gtItemsFor:|previewHeight=120}$
+Is tokenized into three sentences: {{gtExample:MgMarkovExamples>>#tokenizeThreeSentences|codeExpanded=false|previewExpanded=true|previewShow=gtItemsFor:|previewHeight=120}}
+
 "
 Class {
 	#name : #MgMarkovSentenceTokenizer,
