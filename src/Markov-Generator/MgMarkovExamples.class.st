@@ -1,6 +1,7 @@
 "
 I examplify Markov algorithm generating random sentences.
-For more documentation, I recommend you to start with ${class:MgMarkov}$.
+For more documentation, I recommend you to start with {{gtClass:MgMarkov}}.
+
 "
 Class {
 	#name : #MgMarkovExamples,

@@ -1,21 +1,21 @@
 "
-I generate random sentences based on a given Markov dictionary created by ${class:MgMarkovDictionaryGenerator}$. 
+I generate random sentences based on a given Markov dictionary created by {{gtClass:MgMarkovDictionaryGenerator}}. 
 
-You can initialize the Markov dictionary by ${method:MgMarkov>>#dictionary:}$ and ask for a random sentence by calling ${method:MgMarkov>>#generateText}$.
+You can initialize the Markov dictionary by {{gtMethod:MgMarkov>>#dictionary:}} and ask for a random sentence by calling {{gtMethod:MgMarkov>>#generateText}}.
 
-!! Example
+## Example
 
-Using the following sentences as input dataset: ${example:MgMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewHeight=210}$
+Using the following sentences as input dataset: {{gtExample:MgMarkovExamples>>#threeSentences|codeExpanded=false|previewExpanded=true|previewHeight=210}}
 
-I can generate the following sentence: ${example:MgMarkovExamples>>#generatedSentence|codeExpanded=false|previewExpanded=true|previewHeight=60|previewShow=gtStringFor:}$
+I can generate the following sentence: {{gtExample:MgMarkovExamples>>#generatedSentence|codeExpanded=false|previewExpanded=true|previewHeight=60|previewShow=gtStringFor:}}
 
-To generated other sentences using the same Markov dictionary as above, you can press the play and inspect button in the following example result: ${example:MgMarkovExamples>>#markovWithDictionary|codeExpanded=false|previewExpanded=true}$
+To generated other sentences using the same Markov dictionary as above, you can press the play and inspect button in the following example result: {{gtExample:MgMarkovExamples>>#markovWithDictionary|codeExpanded=false|previewExpanded=true}}
 
-!! More Fun
+## More Fun
 
 To play with more complex text, based on the following article
-${method:MgMarkovDataSets class>>#wikipediaSatelliteScienceFiction|expanded=false}$ , you can press the play and inspect button in the following example result: 
-${example:MgMarkov class>>#wikipediaSatelliteScienceFiction|noCode=true|previewExpanded=true}$
+{{gtMethod:MgMarkovDataSets class>>#wikipediaSatelliteScienceFiction|expanded=false}} , you can press the play and inspect button in the following example result: 
+{{gtExample:MgMarkov class>>#wikipediaSatelliteScienceFiction|noCode=true|previewExpanded=true}}
 
 
 "
