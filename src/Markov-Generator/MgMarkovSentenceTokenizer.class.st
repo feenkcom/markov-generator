@@ -31,7 +31,7 @@ MgMarkovSentenceTokenizer >> gtExampleFor: aView [
 	<gtView>
 	self sentences ifNil: [ ^ aView empty ].
 	self sentences ifNotEmpty: [ ^ aView empty ].
-	^ (self class gtDocumentFor: aView)
+	^ (self class gtLepiterCommentFor: aView)
 			title: 'Example';
 			priority: 2
 ]
